@@ -1,0 +1,97 @@
+{% ckan_extends %}
+
+{% block content %}
+  {# Hero Banner with Search #}
+  <div class="hero-banner">
+    <div class="container">
+      <div class="hero-content">
+        <img src="{{ h.url_for_static('/base/images/logo.png') }}" alt="Organization Logo" class="org-logo">
+        <form class="search-field" method="get" action="{% url_for 'dataset.search' %}">
+          <div class="input-group">
+            <input type="text" class="form-control input-lg" name="q" value="" placeholder="{{ _('Search datasets...') }}">
+            <span class="input-group-btn">
+              <button class="btn btn-default btn-lg" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </span>
+          </div>
+        </form>
+        <h2>{{g.site_description}}</h2>
+      </div>
+    </div>
+  </div>
+  
+  <div class="groups-banner">
+    <div class="container groups">
+        {% set groups = h.groups() %}
+          {% for group in groups %}
+          <a href="/group/{{group.name}}">
+          <div class="group">
+            <img src={{group.image_display_url}}></img>
+            <p class="group-name">{{group.display_name}}</p>
+            <p class="group-sets">{{group.package_count}}</p>
+          </div>
+          </a>
+          {% endfor %}
+    </div>
+  </div>
+  <div class="content">
+    {{g.site_intro_text}}
+  </div>
+
+  <!--
+    {# Popular Datasets #}
+    <section class="dataset-section popular-datasets">
+      <h2>{{ _('Most Popular Datasets') }}</h2>
+      <div class="dataset-list">
+        {% set popular_datasets = h.popular_datasets() %}
+        {% if popular_datasets %}
+          {% for package in popular_datasets %}
+            {{ package.title }}
+          {% endfor %}
+        {% else %}
+          <p class="empty">{{ _('No popular datasets found') }}</p>
+        {% endif %}
+      </div>
+    </section>
+
+    {# Newest Datasets #}
+    <section class="dataset-section newest-datasets">
+      <h2>{{ _('Newest Datasets') }}</h2>
+      <div class="dataset-list">
+        {% set newest_datasets = h.newest_datasets() %}
+        {% if newest_datasets %}
+          {% for package in newest_datasets %}
+            {{ package.title }}
+          {% endfor %}
+        {% else %}
+          <p class="empty">{{ _('No newest datasets found') }}</p>
+        {% endif %}
+      </div>
+    </section>
+
+    {# Recently Updated Datasets #}
+    <section class="dataset-section updated-datasets">
+      <h2>{{ _('Recently Updated') }}</h2>
+      <div class="dataset-list">
+        {% set updated_datasets = h.recently_updated_datasets() %}
+        {% if updated_datasets %}
+          {% for package in updated_datasets %}
+            {{ package.title }}
+          {% endfor %}
+        {% else %}
+          <p class="empty">{{ _('No recently updated datasets found') }}</p>
+        {% endif %}
+      </div>
+    </section>
+  -->
+  </div>
+  <div>
+
+  </div>
+{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+  <style></style>
+{% endblock %}

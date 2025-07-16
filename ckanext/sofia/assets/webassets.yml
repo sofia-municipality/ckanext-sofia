@@ -1,0 +1,14 @@
+# sofia-js:
+#   filter: rjsmin
+#   output: ckanext-sofia/%(version)s-sofia.js
+#   contents:
+#     - js/sofia.js
+#   extra:
+#     preload:
+#       - base/main
+
+# sofia-css:
+#   filter: cssrewrite
+#   output: ckanext-sofia/%(version)s-sofia.css
+#   contents:
+#     - css/sofia.css
