@@ -1,11 +1,10 @@
 {% ckan_extends %}
 
 {% block content %}
-  {# Hero Banner with Search #}
-  <div class="hero-banner">
+  {# Hero Banner with Search #} <div class="hero-banner">
     <div class="container">
       <div class="hero-content">
-        <img src="{{ h.url_for_static('/base/images/logo.png') }}" alt="Organization Logo" class="org-logo">
+        <img src="{{ h.url_for_static('/base/images/logo-white.svg') }}" alt="Sofia City Logo" class="org-logo">
         <form class="search-field" method="get" action="{% url_for 'dataset.search' %}">
           <div class="input-group">
             <input type="text" class="form-control input-lg" name="q" value="" placeholder="{{ _('Search datasets...') }}">
@@ -16,7 +15,9 @@
             </span>
           </div>
         </form>
-        <h2>{{g.site_description}}</h2>
+        <div class="subtitle">
+          <h2>{{g.site_description}}</h2>
+        </div>
       </div>
     </div>
   </div>

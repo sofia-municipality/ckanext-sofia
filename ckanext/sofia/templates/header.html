@@ -1,5 +1,12 @@
 {% ckan_extends %}
 
 {% block header_logo %}
-    <h1 class="header-logo">{{g.site_title}}</h1>
+  <div class="logo-background">
+    <a href="/">
+    <img src="{{ h.url_for_static('/base/images/logo-white.svg') }}" alt="Sofia City Logo" />
+    <h1 class="header-logo">
+      {{g.site_title}}
+    </h1>
+    </a>
+  </div>
 {% endblock %}
