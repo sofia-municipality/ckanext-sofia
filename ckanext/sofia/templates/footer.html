@@ -1,15 +1,23 @@
 {% ckan_extends %}
 
-{% block ____________footer_content%}
+{% block footer_content%}
+  <div class="footer-sections">
+
+    <section class="footer-section newest-datasets">
+      <h2>{{ _('Информация') }}</h2>
+      <p><a href="{{h.url_for_static('/about')}}" > За проекта</a></p>
+      <p><a href="https://call.sofia.bg/bg/InfoRequest/Create" > Контакт с нас</a></p>
+      <p><i>Базиранo на <a href="https://ckan.org" target="_blank">ckan.org</a></i></p>
+    </section>
 
     {# Popular Datasets #}
-    <section class="dataset-section popular-datasets">
-      <h2>{{ _('Most Popular Datasets') }}</h2>
+    <section class="footer-section popular-datasets">
+      <h2>{{ _('Набори') }}</h2>
       <div class="dataset-list">
         {% set popular_datasets = h.popular_datasets() %}
         {% if popular_datasets %}
           {% for package in popular_datasets %}
-            <p>{{ package.title }}</p>
+            <p><a href="/dataset/{{package.name}}">{{ package.title}}</a> </p>
           {% endfor %}
         {% else %}
           <p class="empty">{{ _('No popular datasets found') }}</p>
@@ -18,35 +26,18 @@
     </section>
 
     {# Newest Datasets #}
-    <section class="dataset-section newest-datasets">
-      <h2>{{ _('Newest Datasets') }}</h2>
+    
+    <section class="footer-section newest-datasets">
+      <h2>{{ _('Групи') }}</h2>
       <div class="dataset-list">
-        {% set newest_datasets = h.newest_datasets() %}
-        {% if newest_datasets %}
-          {% for package in newest_datasets %}
-            {{ package.title }}
+        {% set groups = h.groups() %}
+          {% for group in groups %}
+          <p><a href="/group/{{group.name}}"> {{group.display_name}}</a> </p>
+          </div>
+          </a>
           {% endfor %}
-        {% else %}
-          <p class="empty">{{ _('No newest datasets found') }}</p>
-        {% endif %}
       </div>
     </section>
+  </div>
 
-    {# Recently Updated Datasets #}
-    <section class="dataset-section updated-datasets">
-      <h2>{{ _('Recently Updated') }}</h2>
-      <div class="dataset-list">
-        {% set updated_datasets = h.recently_updated_datasets() %}
-        {% if updated_datasets %}
-          {% for package in updated_datasets %}
-            {{ package.title }}
-          {% endfor %}
-        {% else %}
-          <p class="empty">{{ _('No recently updated datasets found') }}</p>
-        {% endif %}
-      </div>
-    </section>
-<div>
-  Базиранo на <a href="https://ckan.org" target="_blank">ckan.org</a>
-</div>
 {% endblock %}

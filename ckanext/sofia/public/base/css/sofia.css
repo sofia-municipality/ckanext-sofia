@@ -8,13 +8,29 @@
     
     .header-logo {
       color:white;
-      a {
-        color:white;
-      }
-      a:hover {
+      a, a:hover {
         color:white;
       }
       margin: 3px 20px !important;
+      font-size: 30px !important;
+      font-weight: 300 !important;
+      letter-spacing: 1px !important;
+      line-height: 1.2!important;
+      padding: 0!important;
+    }
+    
+    @media (max-width:991px) {
+      .header-logo {
+        font-size: 15px !important;
+        font-weight: 600 !important;
+      }
+    .logo-background a {
+      img {
+        height: 45px;
+        width: 45px;
+      }
+    }
+      
     }
 
     /* Hero Banner */
@@ -43,14 +59,14 @@
     .hero-content .subtitle {
       padding: 60px 0;
       h2 {
-        font-size: 50px;
+        font-size: 34px;
         text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                0px 8px 13px rgba(0,0,0,0.1),
                0px 18px 23px rgba(0,0,0,0.1);
       }
     }
     .org-logo {
-      max-height: 200px;
+      max-height: 100px;
       -webkit-filter: drop-shadow(5px 5px 5px #fff);
       filter: drop-shadow(5px 5px 5px #222);
       margin: 50px 0;
@@ -93,8 +109,8 @@
     justify-content: center;
   }
   img {
-    height: 100px;
-    width: 100px;
+    height: 65px;
+    width: 65px;
   }
 
 }
@@ -105,6 +121,62 @@
     background-image: url("/base/images/background.png")!important;
     background-repeat: no-repeat!important;
     background-size:contain!important;
+    
+    .footer-sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; 
+    }
+    .footer-section {
+      margin:20px;
+      min-width: 200px;
+    }
+}
+
+.group {
+  width:150px;
+  height: 150px;
+  text-align: center;
+  padding: 30px 10px;
+  color:black;
+  border: 3px #000000 dotted;
+  margin: 20px;
+  line-height: 1;
+}
+
+.group img {
+  width: 50px;
+  filter: drop-shadow(0px 2000px 0 black);
+  transform: translateY(-2000px);
+}
+.group-name {
+  font-size: 15px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+.group-sets {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.pill {
+  background-color: #647A82!important;
+}
+
+.item-count {
+  background-color: #89a1d3!important;
+}
+
+.masthead .main-navbar ul li.active a {
+  border-radius: 0.3rem;
+  background-color: #182359!important;
+}
+
+.account-masthead {
+  min-height: 30px;
+  color: #fff;
+  background: #182359!important;
 }
 
 .main {
