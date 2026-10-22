@@ -1,10 +1,27 @@
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 from ckan.lib.helpers import url_for
+from ckanext.sofia.logic import action, auth
+from ckanext.sofia import views
 
 class SofiaPlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
+    plugins.implements(plugins.IActions)
+    plugins.implements(plugins.IAuthFunctions)
+    plugins.implements(plugins.IBlueprint)
+
+    # IActions
+    def get_actions(self):
+        return action.get_actions()
+
+    # IAuthFunctions
+    def get_auth_functions(self):
+        return auth.get_auth_functions()
+
+    # IBlueprint
+    def get_blueprint(self):
+        return views.get_blueprints()
 
     # IConfigurer
     def update_config(self, config_):
