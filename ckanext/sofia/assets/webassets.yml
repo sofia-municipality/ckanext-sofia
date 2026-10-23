@@ -12,3 +12,18 @@
 #   output: ckanext-sofia/%(version)s-sofia.css
 #   contents:
 #     - css/sofia.css
+
+# Ctrl/Cmd + wheel to zoom maps (see js/map_gesture.js)
+map-gesture-js:
+  filter: rjsmin
+  output: ckanext-sofia/%(version)s-map-gesture.js
+  contents:
+    - js/map_gesture.js
+  extra:
+    preload:
+      - ckanext-geoview/geojson_js
+
+map-gesture-css:
+  output: ckanext-sofia/%(version)s-map-gesture.css
+  contents:
+    - css/map_gesture.css
