@@ -136,33 +136,6 @@
     }
 }
 
-.group {
-  width:150px;
-  height: 150px;
-  text-align: center;
-  padding: 30px 10px;
-  color:black;
-  border: 3px #000000 dotted;
-  margin: 20px;
-  line-height: 1;
-}
-
-.group img {
-  width: 50px;
-  filter: drop-shadow(0px 2000px 0 black);
-  transform: translateY(-2000px);
-}
-.group-name {
-  font-size: 15px;
-  margin: 5px 0;
-  font-weight: bold;
-}
-.group-sets {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-
 .pill {
   background-color: #647A82!important;
 }
@@ -211,8 +184,7 @@
 
 .group img {
   width: 50px;
-  filter: drop-shadow(0px 2000px 0 black);
-  transform: translateY(-2000px);
+  filter: brightness(0);
 }
 .group-name {
   font-size: 15px;
@@ -222,24 +194,4 @@
 .group-sets {
   font-size: 20px;
   font-weight: bold;
-}
-
-
-.pill {
-  background-color: #647A82!important;
-}
-
-.item-count {
-  background-color: #89a1d3!important;
-}
-
-.masthead .main-navbar ul li.active a {
-  border-radius: 0.3rem;
-  background-color: #182359!important;
-}
-
-.account-masthead {
-  min-height: 30px;
-  color: #fff;
-  background: #182359!important;
 }
