@@ -27,3 +27,18 @@ map-gesture-css:
   output: ckanext-sofia/%(version)s-map-gesture.css
   contents:
     - css/map_gesture.css
+
+# GeoJSON preview with file checks and a load time limit (see js/geojson_preview.js)
+geojson-preview-js:
+  filter: rjsmin
+  output: ckanext-sofia/%(version)s-geojson-preview.js
+  contents:
+    - js/geojson_preview.js
+  extra:
+    preload:
+      - ckanext-geoview/geojson_js
+
+geojson-preview-css:
+  output: ckanext-sofia/%(version)s-geojson-preview.css
+  contents:
+    - css/geojson_preview.css

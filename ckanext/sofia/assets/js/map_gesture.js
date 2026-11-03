@@ -14,7 +14,7 @@
   var isMac = /Mac|iPhone|iPad/.test(navigator.platform);
   var key = isMac ? "⌘" : "Ctrl";
   var messages = {
-    bg: "Използвайте " + key + " + колелото на мишката, за да промените мащаба на картата",
+    bg: "Използвайте " + key + " + scroll, за да промените мащаба на картата",
     en: "Use " + key + " + scroll to zoom the map"
   };
 

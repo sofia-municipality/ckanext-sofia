@@ -1,0 +1,46 @@
+/* "Loading visualization" while the file is checked and loaded. Fills the
+   view's iframe, which has the loading height then (see js/geojson_preview.js) */
+.geojson-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 100vh;
+  color: #555;
+  font-size: 16px;
+}
+
+.geojson-status .geojson-loading-spinner {
+  width: 28px;
+  height: 28px;
+  border-width: 4px;
+}
+
+/* Covers the map while features are still being added (see js/geojson_preview.js) */
+.geojson-loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.geojson-loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid rgba(43, 63, 152, 0.25);
+  border-top-color: #2b3f98;
+  border-radius: 50%;
+  animation: geojson-loading-spin 0.9s linear infinite;
+}
+
+@keyframes geojson-loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

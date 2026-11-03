@@ -4,4 +4,20 @@
   {{ super() }}
   {% asset 'sofia/map-gesture-js' %}
   {% asset 'sofia/map-gesture-css' %}
+  {% asset 'sofia/geojson-preview-js' %}
+  {% asset 'sofia/geojson-preview-css' %}
+{% endblock %}
+
+{# Same markup as geoview's, but uses sofia-geojson-preview, which removes
+   the view for files that aren't GeoJSON and asks before loading large ones.
+   It shows its own loading text #}
+{% block page %}
+  {{ self.styles() }}
+  {% set map_config = h.get_common_map_config_geojson() %}
+  <div data-module="sofia-geojson-preview" id="data-preview"
+       data-module-site_url="{{ h.dump_json(h.url_for('/', locale='default', qualified=true)) }}"
+       data-module-map_config="{{ h.dump_json(map_config) }}"
+       data-module-max_file_size="{{ h.geojson_get_max_file_size() }}"
+       >
+  </div>
 {% endblock %}

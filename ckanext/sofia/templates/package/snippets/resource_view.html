@@ -1,0 +1,28 @@
+{% ckan_extends %}
+
+{% block resource_view %}
+  {# GeoJSON views start at the height of their loading text instead of
+     CKAN's 650px minimum; the viewer (assets/js/geojson_preview.js) sizes the
+     iframe for the map or a message, or removes the view #}
+  {% if resource_view['view_type'] == 'geojson_view' %}
+    <style>
+      #view-{{ resource_view['id'] }} .ckanext-datapreview > iframe {
+        min-height: 0;
+        height: 120px;
+      }
+    </style>
+  {% endif %}
+  {# Leaves out the tabs of GeoJSON views when the viewer found this session
+     that the file isn't GeoJSON (assets/js/geojson_preview.js) #}
+  <script>
+    try {
+      if (sessionStorage.getItem({{ ('sofia-not-geojson:' ~ resource['id']) | tojson }}) ===
+          {{ resource['metadata_modified'] | tojson }}) {
+        document.querySelectorAll(".nav-tabs .view-item-geojson_view").forEach(function (tab) {
+          tab.parentNode.style.display = "none";
+        });
+      }
+    } catch (e) {}
+  </script>
+  {{ super() }}
+{% endblock %}

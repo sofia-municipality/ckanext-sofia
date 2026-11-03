@@ -1,8 +1,9 @@
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
+from ckan.lib import datapreview
 from ckan.lib.helpers import url_for
 from ckanext.sofia.logic import action, auth
-from ckanext.sofia import views
+from ckanext.sofia import geojson, views
 
 class SofiaPlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
@@ -10,6 +11,7 @@ class SofiaPlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IActions)
     plugins.implements(plugins.IAuthFunctions)
     plugins.implements(plugins.IBlueprint)
+    plugins.implements(plugins.IResourceController, inherit=True)
 
     # IActions
     def get_actions(self):
@@ -28,6 +30,18 @@ class SofiaPlugin(plugins.SingletonPlugin):
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
         toolkit.add_resource('assets', 'sofia')
+        geojson.patch_geojson_view()
+
+    # IResourceController
+    def after_resource_update(self, context, resource):
+        # CKAN adds default views on update only when the format changes, but
+        # a new file can make a resource GeoJSON with the same format
+        default_views = toolkit.aslist(
+            toolkit.config.get('ckan.views.default_views'))
+        if geojson.VIEW_TYPE in default_views:
+            datapreview.add_views_to_resource(
+                {'user': context.get('user'), 'ignore_auth': True},
+                resource, view_types=[geojson.VIEW_TYPE])
 
     # ITemplateHelpers
     def get_helpers(self):
