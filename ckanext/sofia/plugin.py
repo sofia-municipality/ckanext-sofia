@@ -2,10 +2,12 @@ import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 from ckan.lib import datapreview
 from ckan.lib.helpers import url_for
+from ckan.lib.plugins import DefaultTranslation
 from ckanext.sofia.logic import action, auth
-from ckanext.sofia import geojson, views
+from ckanext.sofia import datatables, geojson, views
 
-class SofiaPlugin(plugins.SingletonPlugin):
+class SofiaPlugin(plugins.SingletonPlugin, DefaultTranslation):
+    plugins.implements(plugins.ITranslation)
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
     plugins.implements(plugins.IActions)
@@ -31,6 +33,7 @@ class SofiaPlugin(plugins.SingletonPlugin):
         toolkit.add_public_directory(config_, 'public')
         toolkit.add_resource('assets', 'sofia')
         geojson.patch_geojson_view()
+        datatables.patch_datatables_search()
 
     # IResourceController
     def after_resource_update(self, context, resource):
@@ -45,12 +48,18 @@ class SofiaPlugin(plugins.SingletonPlugin):
 
     # ITemplateHelpers
     def get_helpers(self):
-        return {
+        helpers = {
             'popular_datasets': self.popular_datasets,
             'newest_datasets': self.newest_datasets,
             'recently_updated_datasets': self.recently_updated_datasets,
             'groups': self.groups
         }
+        # A chained helper needs the helper it extends: CKAN won't start
+        # when datatables_view isn't loaded (e.g. in the tests)
+        if plugins.plugin_loaded('datatables_view'):
+            helpers['datatablesview_get_language_file_path'] = \
+                datatables.datatablesview_get_language_file_path
+        return helpers
 
     def groups(self):
         """Return a list of popular datasets"""

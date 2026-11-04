@@ -1,0 +1,19 @@
+# Translation template for ckanext-sofia.
+# CKAN sends a language's strings to the browser (/api/i18n/<lang>) only when
+# a .pot file lists them as used in a .js file. The table view uses these two
+# in its print/copy output and search tooltip, but CKAN's own ckan.pot misses
+# them. Keep them here when regenerating this file with extract_messages.
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-sofia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ckanext/datatablesview/assets/datatablesview.js:381
+msgid "TABLE FILTER"
+msgstr ""
+
+#: ckanext/datatablesview/assets/datatablesview.js:382
+msgid "COLUMN FILTER/S"
+msgstr ""

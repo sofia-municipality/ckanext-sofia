@@ -1,0 +1,186 @@
+# Bulgarian translations for ckanext-sofia.
+# Also fills in CKAN core strings that CKAN's own Bulgarian translation
+# leaves empty: the resource page and its views, mostly the table view
+# (datatables_view). Entries here take precedence over CKAN's.
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-sofia\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Table view toolbar and menus (ckanext/datatablesview/assets/datatablesview.js)
+
+msgid "Table/List toggle"
+msgstr "Таблица/списък"
+
+msgid "Copy to clipboard"
+msgstr "Копиране в клипборда"
+
+msgid "Toggle column visibility"
+msgstr "Показване/скриване на колони"
+
+msgid "Restore visibility"
+msgstr "Възстановяване на видимостта"
+
+msgid "Show all"
+msgstr "Показване на всички"
+
+msgid "Show none"
+msgstr "Скриване на всички"
+
+msgid "Filtered"
+msgstr "Само филтрираните"
+
+msgid "Filtered download"
+msgstr "Изтегляне на филтрираните данни"
+
+msgid "Reset"
+msgstr "Нулиране"
+
+msgid "Print"
+msgstr "Печат"
+
+msgid "Share current view"
+msgstr "Споделяне на текущия изглед"
+
+msgid "Copied deeplink to clipboard"
+msgstr "Връзката е копирана в клипборда"
+
+msgid "Sort"
+msgstr "Сортиране"
+
+msgid ""
+"Press SHIFT key while clicking on\n"
+"sort control for multi-column sort"
+msgstr ""
+"Задръжте SHIFT, докато щраквате\n"
+"за сортиране по няколко колони"
+
+msgid "TABLE FILTER"
+msgstr "ФИЛТЪР НА ТАБЛИЦАТА"
+
+msgid "COLUMN FILTER/S"
+msgstr "ФИЛТРИ ПО КОЛОНИ"
+
+msgid "Double-click to reset filters"
+msgstr "Щракнете два пъти, за да изчистите филтрите"
+
+msgid "seconds"
+msgstr "секунди"
+
+# Table view page and settings form (ckanext/datatablesview/templates)
+
+msgid "Refit"
+msgstr "Напасване на колоните"
+
+msgid "List view/Responsive display"
+msgstr "Изглед на списък/адаптивно показване"
+
+msgid "Ellipsis length"
+msgstr "Дължина преди многоточие"
+
+msgid ""
+"Length at which data will be truncated with an ellipsis for display. Set to "
+"zero for no truncation, and for data to be wrapped at column name width "
+"instead."
+msgstr ""
+"Дължина, след която данните се съкращават с многоточие. Задайте нула, за да "
+"не се съкращават, а да се пренасят на ширината на името на колоната."
+
+msgid "Date format"
+msgstr "Формат на датите"
+
+msgid ""
+"Moment.js date format to use for displaying dates (see <a "
+"href=\"https://devhints.io/moment#formatting-1\" target=\"_blank\">Moment.js "
+"cheatsheet</a>). If <b>NONE</b>, the raw timestamp value will be shown."
+msgstr ""
+"Формат на Moment.js за показване на датите (вижте <a "
+"href=\"https://devhints.io/moment#formatting-1\" target=\"_blank\">справката "
+"за Moment.js</a>). При <b>NONE</b> се показва необработената стойност."
+
+# Resource views (ckan/templates/package/snippets/resource_view.html)
+
+msgid "Fullscreen"
+msgstr "Цял екран"
+
+msgid "This resource view is not available at the moment."
+msgstr "Този изглед на ресурса не е достъпен в момента."
+
+msgid "Embed resource view"
+msgstr "Вграждане на изгледа"
+
+msgid ""
+"You can copy and paste the embed code into a CMS or blog software that "
+"supports raw HTML"
+msgstr ""
+"Можете да копирате кода за вграждане в CMS или блог, който поддържа HTML код"
+
+msgid "Width"
+msgstr "Ширина"
+
+msgid "Height"
+msgstr "Височина"
+
+msgid "Close"
+msgstr "Затваряне"
+
+msgid "Select a field"
+msgstr "Изберете поле"
+
+# Resource page (ckan/templates/package/resource_read.html)
+
+msgid "Views"
+msgstr "Изгледи"
+
+msgid "Dataset description:"
+msgstr "Описание на набора от данни:"
+
+msgid "Data last updated"
+msgstr "Последна актуализация на данните"
+
+msgid "Metadata last updated"
+msgstr "Последна актуализация на метаданните"
+
+msgid "There are no views created for this resource yet."
+msgstr "Все още няма създадени изгледи за този ресурс."
+
+msgid "Not seeing the views you were expecting?"
+msgstr "Не виждате очакваните изгледи?"
+
+msgid "Here are some reasons you may not be seeing expected views:"
+msgstr "Ето някои причини да не виждате очакваните изгледи:"
+
+msgid "No view has been created that is suitable for this resource"
+msgstr "Не е създаден изглед, подходящ за този ресурс"
+
+msgid "The site administrators may not have enabled the relevant view plugins"
+msgstr ""
+"Администраторите на сайта може да не са включили съответните разширения за "
+"изгледи"
+
+msgid ""
+"If a view requires the DataStore, the DataStore plugin may not be enabled, or"
+" the data may not have been pushed to the DataStore, or the DataStore hasn't "
+"finished processing the data yet"
+msgstr ""
+"Ако изгледът изисква DataStore, разширението DataStore може да не е включено,"
+" данните може да не са заредени в DataStore или DataStore още не е завършил "
+"обработката им"
+
+msgid ""
+"<b>No fields defined:</b> click the Data Dictionary button above to customize"
+" this table"
+msgstr ""
+"<b>Няма описани полета:</b> натиснете бутона „Речник на данните“ по-горе, за "
+"да настроите таблицата"
+
+msgid ""
+"<b>No table view defined:</b> click the Views button and add a Table view to "
+"view and edit data"
+msgstr ""
+"<b>Няма изглед „Таблица“:</b> натиснете бутона „Изгледи“ и добавете изглед "
+"„Таблица“, за да преглеждате и редактирате данните"

@@ -1,0 +1,45 @@
+{% ckan_extends %}
+
+{% block styles %}
+  {{ super() }}
+  <style>
+    /* No resource name and sort order under the table. They keep their
+       space: the table is sized for them and the pager sits beside them */
+    .dataTables_wrapper .resourceinfo,
+    .dataTables_wrapper .sortinfo {
+      visibility: hidden;
+    }
+    /* Column visibility menu: as wide as the longest column name (CKAN
+       leaves it at 200px, with a scrollbar) and centred in the frame, where
+       CKAN's offset cuts it off on the left in narrow frames */
+    div.dt-button-collection.fixed {
+      width: max-content;
+      max-width: calc(100vw - 2em);
+      transform: translate(-50%, -20%);
+    }
+    div.dt-button-collection .dropdown-menu {
+      width: auto;
+      overflow-x: hidden;
+    }
+    div.dt-button-collection .dropdown-item {
+      white-space: normal;
+    }
+  </style>
+  {# Hides the DataStore's own row number (_id, column 0): it isn't part of
+     the file, so it stays hidden even after "Show all" columns. CKAN also
+     freezes the first column (meant for _id) when scrolling sideways; here
+     no column is frozen #}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      jQuery(document).on("init.dt", function (event, settings) {
+        new jQuery.fn.dataTable.Api(settings).fixedColumns().left(0);
+      });
+      jQuery(document).on("init.dt column-visibility.dt", function (event, settings) {
+        var idColumn = new jQuery.fn.dataTable.Api(settings).column(0);
+        if (idColumn.visible()) {
+          idColumn.visible(false);
+        }
+      });
+    });
+  </script>
+{% endblock %}
