@@ -184,3 +184,1085 @@ msgid ""
 msgstr ""
 "<b>Няма изглед „Таблица“:</b> натиснете бутона „Изгледи“ и добавете изглед "
 "„Таблица“, за да преглеждате и редактирате данните"
+
+# This extension's templates and validators (templates/home, templates/footer.html, logic)
+
+msgid "Required"
+msgstr "Задължително"
+
+msgid "Search datasets..."
+msgstr "Търсене на набори от данни..."
+
+msgid "Most Popular Datasets"
+msgstr "Най-популярни набори от данни"
+
+msgid "No popular datasets found"
+msgstr "Няма намерени популярни набори от данни"
+
+msgid "Newest Datasets"
+msgstr "Най-нови набори от данни"
+
+msgid "No newest datasets found"
+msgstr "Няма намерени нови набори от данни"
+
+msgid "Recently Updated"
+msgstr "Последно актуализирани"
+
+msgid "No recently updated datasets found"
+msgstr "Няма намерени наскоро актуализирани набори от данни"
+
+# Left empty by CKAN's Bulgarian translation (ckan/lib)
+
+#, python-brace-format
+msgid "Add {object_type}"
+msgstr "Добавяне на {object_type}"
+
+#, python-brace-format
+msgid "{object_type}s"
+msgstr "{object_type}"
+
+#, python-brace-format
+msgid "Create {object_type}"
+msgstr "Създаване на {object_type}"
+
+#, python-brace-format
+msgid "Are you sure you want to delete this {object_type}?"
+msgstr "Сигурни ли сте, че искате да изтриете {object_type}?"
+
+#, python-brace-format
+msgid "A little information about my {object_type}..."
+msgstr "Малко информация за моя {object_type}..."
+
+#, python-brace-format
+msgid "Edit {object_type}"
+msgstr "Редактиране на {object_type}"
+
+#, python-brace-format
+msgid "{object_type} Form"
+msgstr "Формуляр за {object_type}"
+
+#, python-brace-format
+msgid "My {object_type}s"
+msgstr "Моите {object_type}"
+
+#, python-brace-format
+msgid "View {object_type}"
+msgstr "Преглед на {object_type}"
+
+#, python-brace-format
+msgid "My {object_type}"
+msgstr "Моят {object_type}"
+
+#, python-brace-format
+msgid "There are currently no {object_type}s for this site"
+msgstr "В момента няма {object_type} в този сайт"
+
+#, python-brace-format
+msgid "There are no {object_type}s associated with this dataset"
+msgstr "Няма {object_type}, свързани с този набор от данни"
+
+#, python-brace-format
+msgid "There is no description for this {object_type}"
+msgstr "Няма описание за {object_type}"
+
+#, python-brace-format
+msgid "No {object_type}"
+msgstr "Без {object_type}"
+
+#, python-brace-format
+msgid "Save {object_type}"
+msgstr "Запазване на {object_type}"
+
+#, python-brace-format
+msgid "Search {object_type}s..."
+msgstr "Търсене в {object_type}..."
+
+#, python-brace-format
+msgid "You are not a member of any {object_type}s."
+msgstr "Не сте член на {object_type}."
+
+#, python-brace-format
+msgid "Update {object_type}"
+msgstr "Актуализиране на {object_type}"
+
+msgid "Must be a Unicode string value"
+msgstr "Трябва да е текстова стойност (Unicode)"
+
+# Left empty by CKAN's Bulgarian translation (ckan/logic)
+
+msgid "An organization must be provided"
+msgstr "Трябва да бъде посочена организация"
+
+msgid "You cannot move this dataset to another organization"
+msgstr "Не можете да преместите този набор от данни в друга организация"
+
+msgid "Must be a positive integer"
+msgstr "Трябва да е положително цяло число"
+
+msgid "Must be a float timestamp"
+msgstr "Трябва да е времеви печат (число с плаваща запетая)"
+
+msgid "Dataset id already exists"
+msgstr "Вече съществува набор от данни с този идентификатор"
+
+msgid "Resource id already exists."
+msgstr "Вече съществува ресурс с този идентификатор."
+
+msgid "Id already exists"
+msgstr "Идентификаторът вече съществува"
+
+msgid "ResourceView id already exists"
+msgstr "Вече съществува изглед на ресурс с този идентификатор"
+
+msgid "Invalid id provided"
+msgstr "Посочен е невалиден идентификатор"
+
+#, python-format
+msgid "Must be at least %s characters long"
+msgstr "Трябва да е поне %s знака"
+
+msgid "Must be purely lowercase alphanumeric (ascii) characters and these symbols: -_"
+msgstr "Трябва да съдържа само малки латински букви, цифри и символите: -_"
+
+#, python-format
+msgid ""
+"Tag \"%s\" can only contain alphanumeric characters, spaces (\" \"), hyphens "
+"(\"-\"), underscores (\"_\") or dots (\".\")"
+msgstr ""
+"Етикетът „%s“ може да съдържа само букви, цифри, интервали (\" \"), тирета "
+"(\"-\"), долни черти (\"_\") или точки (\".\")"
+
+msgid "That login name can not be modified."
+msgstr "Това потребителско име не може да бъде променяно."
+
+msgid "Your password must be 8 characters or longer"
+msgstr "Паролата Ви трябва да е поне 8 знака"
+
+msgid "\"filter_fields\" and \"filter_values\" should have the same length"
+msgstr "\"filter_fields\" и \"filter_values\" трябва да имат еднаква дължина"
+
+msgid "\"filter_fields\" is required when \"filter_values\" is filled"
+msgstr "\"filter_fields\" е задължително, когато \"filter_values\" е попълнено"
+
+msgid "\"filter_values\" is required when \"filter_fields\" is filled"
+msgstr "\"filter_values\" е задължително, когато \"filter_fields\" е попълнено"
+
+msgid "There is a schema field with the same name"
+msgstr "Вече има поле в схемата със същото име"
+
+#, python-brace-format
+msgid "Email {email} is not a valid format"
+msgstr "Имейлът {email} не е във валиден формат"
+
+msgid "Must be a dict"
+msgstr "Трябва да е речник (dict)"
+
+#, python-brace-format
+msgid "The email address '{email}' belongs to a registered user."
+msgstr "Имейл адресът „{email}“ принадлежи на регистриран потребител."
+
+#, python-brace-format
+msgid "Value must be one of {}"
+msgstr "Стойността трябва да е една от {}"
+
+msgid "The value should be a valid JSON object"
+msgstr "Стойността трябва да е валиден JSON обект"
+
+msgid "Could not parse the value as a valid JSON object"
+msgstr "Стойността не може да бъде разчетена като валиден JSON обект"
+
+#, python-brace-format
+msgid "Could not parse extra '{name}' as valid JSON"
+msgstr "Допълнителното поле „{name}“ не може да бъде разчетено като валиден JSON"
+
+#, python-brace-format
+msgid "Role must be one of \"{}\""
+msgstr "Ролята трябва да е една от \"{}\""
+
+msgid "Dataset collaborators not enabled"
+msgstr "Сътрудниците по набори от данни не са включени"
+
+#, python-brace-format
+msgid "Error sending the invite email, the user was not created: {0}"
+msgstr "Грешка при изпращане на поканата по имейл, потребителят не е създаден: {0}"
+
+msgid "Error validating the schema of the user to follow."
+msgstr "Грешка при проверката на схемата на потребителя за следване."
+
+msgid "Error validating the schema of the dataset to follow."
+msgstr "Грешка при проверката на схемата на набора от данни за следване."
+
+msgid "Error validating the schema of the group to follow."
+msgstr "Грешка при проверката на схемата на групата за следване."
+
+msgid "Package not found"
+msgstr "Пакетът не е намерен"
+
+msgid "Organization cannot be deleted while it still has datasets"
+msgstr "Организацията не може да бъде изтрита, докато има набори от данни"
+
+msgid "Error validating the schema of the object to unfollow."
+msgstr "Грешка при проверката на схемата на обекта за прекратяване на следването."
+
+#, python-brace-format
+msgid "Capacity must be one of \"{}\""
+msgstr "Правомощието трябва да е едно от \"{}\""
+
+msgid "Not allowed to retrieve collaborators"
+msgstr "Нямате право да виждате сътрудниците"
+
+msgid "Parameter is not an bool"
+msgstr "Параметърът не е булева стойност"
+
+msgid "No dataset id provided, cannot check auth."
+msgstr ""
+"Не е посочен идентификатор на набор от данни, правата не могат да бъдат "
+"проверени."
+
+#, python-format
+msgid "User %s not authorized to create resources on dataset %s"
+msgstr "Потребителят %s няма право да създава ресурси в набора от данни %s"
+
+#, python-format
+msgid "User %s not authorized to add collaborators to this dataset"
+msgstr "Потребителят %s няма право да добавя сътрудници към този набор от данни"
+
+msgid "Resource view not found, cannot check auth."
+msgstr "Изгледът на ресурса не е намерен, правата не могат да бъдат проверени."
+
+#, python-format
+msgid "User %s not authorized to remove collaborators from this dataset"
+msgstr "Потребителят %s няма право да премахва сътрудници от този набор от данни"
+
+#, python-format
+msgid "User %s not authorized to list collaborators from this dataset"
+msgstr "Потребителят %s няма право да вижда сътрудниците на този набор от данни"
+
+# Left empty by CKAN's Bulgarian translation (ckan/public)
+
+#, python-format
+msgid "Input is too short, must be at least one character"
+msgid_plural "Input is too short, must be at least %(num)d characters"
+msgstr[0] "Въведеното е твърде кратко, трябва да е поне един знак"
+msgstr[1] "Въведеното е твърде кратко, трябва да е поне %(num)d знака"
+
+msgid "Please select the file to upload again"
+msgstr "Моля, изберете отново файла за качване"
+
+msgid "Reorder resources"
+msgstr "Пренареждане на ресурсите"
+
+msgid ""
+"You can rearrange the resources by dragging them using the arrow icon. Drag "
+"the resource to the right and place it to the desired location on the list. "
+"When you are done, click the \"Save order\" -button."
+msgstr ""
+"Можете да пренаредите ресурсите, като ги плъзгате за иконата със стрелка. "
+"Плъзнете ресурса надясно и го поставете на желаното място в списъка. Когато "
+"сте готови, натиснете бутона „Запазване на реда“."
+
+msgid "Reorder resource view"
+msgstr "Пренареждане на изгледите на ресурса"
+
+# Left empty by CKAN's Bulgarian translation (ckan/templates)
+
+msgid "You might need to login to access this page."
+msgstr "Може да трябва да влезете, за да видите тази страница."
+
+msgid "Click here to login"
+msgstr "Натиснете тук, за да влезете"
+
+msgid "CKAN Association"
+msgstr "Асоциация CKAN"
+
+msgid "View dashboard"
+msgstr "Към таблото"
+
+msgid "Profile settings"
+msgstr "Настройки на профила"
+
+msgid "Account"
+msgstr "Профил"
+
+msgid "Toggle navigation"
+msgstr "Навигация"
+
+msgid "Search Datasets..."
+msgstr "Търсене на набори от данни..."
+
+msgid "Submit"
+msgstr "Изпращане"
+
+msgid "Skip to main content"
+msgstr "Към основното съдържание"
+
+msgid "Breadcrumb"
+msgstr "Навигационна пътека"
+
+msgid "Custom Stylesheet"
+msgstr "Потребителски стилове"
+
+msgid "Site logo"
+msgstr "Лого на сайта"
+
+#, python-format
+msgid ""
+"<p><strong>Site Title:</strong> This is the title of this CKAN instance It "
+"appears in various places throughout CKAN.</p> <p><strong>Custom "
+"Stylesheet:</strong> Define an alternative main CSS file.</p> <p><strong>Site"
+" Tag Logo:</strong> This is the logo that appears in the header of all the "
+"CKAN instance templates.</p> <p><strong>About:</strong> This text will appear"
+" on this CKAN instances <a href=\"%(about_url)s\">about page</a>.</p> "
+"<p><strong>Intro Text:</strong> This text will appear on this CKAN instances "
+"<a href=\"%(home_url)s\">home page</a> as a welcome to visitors.</p> "
+"<p><strong>Custom CSS:</strong> This is a block of CSS that appears in "
+"<code>&lt;head&gt;</code> tag of every page. If you wish to customize the "
+"templates more fully we recommend <a href=\"%(docs_url)s\" target=\"_blank\" "
+"rel=\"noreferrer\">reading the documentation</a>.</p>"
+msgstr ""
+"<p><strong>Заглавие на сайта:</strong> Това е заглавието на тази инсталация "
+"на CKAN. Показва се на различни места в CKAN.</p> <p><strong>Потребителски "
+"стилове:</strong> Задайте алтернативен основен CSS файл.</p> <p><strong>Лого "
+"на сайта:</strong> Това е логото, което се показва в заглавната част на "
+"всички шаблони на тази инсталация на CKAN.</p> <p><strong>Относно:</strong> "
+"Този текст ще се показва на <a href=\"%(about_url)s\">страницата "
+"„Относно“</a>.</p> <p><strong>Въвеждащ текст:</strong> Този текст ще се "
+"показва на <a href=\"%(home_url)s\">началната страница</a> като приветствие "
+"за посетителите.</p> <p><strong>Потребителски CSS:</strong> Това е блок CSS, "
+"който се включва в тага <code>&lt;head&gt;</code> на всяка страница. Ако "
+"искате да промените шаблоните по-цялостно, препоръчваме да <a "
+"href=\"%(docs_url)s\" target=\"_blank\" rel=\"noreferrer\">прочетете "
+"документацията</a>.</p>"
+
+msgid "Current Sysadmins"
+msgstr "Текущи системни администратори"
+
+msgid "Revoke Sysadmin permission"
+msgstr "Отнемане на правата на системен администратор"
+
+msgid "Promote user to Sysadmin"
+msgstr "Даване на права на системен администратор"
+
+msgid "Promote"
+msgstr "Повишаване"
+
+msgid "Administer CKAN"
+msgstr "Администриране на CKAN"
+
+#, python-format
+msgid ""
+"<p>As a sysadmin user you have full control over this CKAN instance. Proceed "
+"with care!</p> <p>For guidance on using sysadmin features, see the CKAN  <a "
+"href=\"%(docs_url)s\" target=\"_blank\" rel=\"noreferrer\">sysadmin "
+"guide</a></p>"
+msgstr ""
+"<p>Като системен администратор имате пълен контрол над тази инсталация на "
+"CKAN. Действайте внимателно!</p> <p>За насоки относно функциите за системни "
+"администратори вижте <a href=\"%(docs_url)s\" target=\"_blank\" "
+"rel=\"noreferrer\">ръководството за системни администратори</a> на CKAN</p>"
+
+msgid "Are you sure you want to purge everything?"
+msgstr "Сигурни ли сте, че искате да изчистите всичко окончателно?"
+
+msgid "Purge all"
+msgstr "Изчистване на всичко"
+
+msgid "Purge deleted datasets, organizations or groups forever and irreversibly."
+msgstr ""
+"Окончателно и необратимо изчистване на изтритите набори от данни, организации"
+" или групи."
+
+msgid "Deleted datasets"
+msgstr "Изтрити набори от данни"
+
+msgid "Deleted organizations"
+msgstr "Изтрити организации"
+
+msgid "Deleted groups"
+msgstr "Изтрити групи"
+
+msgid "Purge"
+msgstr "Изчистване"
+
+#, python-format
+msgid ""
+"Dear %(user_name)s, You have been invited to %(site_title)s. A user has "
+"already been created for you with the username %(user_name)s. You can change "
+"it later. You have been added to the %(group_type)s %(group_title)s with the "
+"following role: %(role_name)s. To accept this invite, please reset your "
+"password at: %(reset_link)s Have a nice day. -- Message sent by "
+"%(site_title)s (%(site_url)s)"
+msgstr ""
+"Уважаеми/а %(user_name)s, Поканени сте в %(site_title)s. За Вас вече е "
+"създаден потребител с потребителско име %(user_name)s. Можете да го промените"
+" по-късно. Добавени сте към %(group_type)s %(group_title)s със следната роля:"
+" %(role_name)s. За да приемете поканата, моля, задайте нова парола на: "
+"%(reset_link)s Приятен ден. -- Съобщение, изпратено от %(site_title)s "
+"(%(site_url)s)"
+
+#, python-format
+msgid "Invite for %(site_title)s"
+msgstr "Покана за %(site_title)s"
+
+#, python-format
+msgid ""
+"Dear %(user_name)s, You have requested your password on %(site_title)s to be "
+"reset. Please click the following link to confirm this request: "
+"%(reset_link)s Have a nice day. -- Message sent by %(site_title)s "
+"(%(site_url)s)"
+msgstr ""
+"Уважаеми/а %(user_name)s, Поискахте нулиране на паролата си в %(site_title)s."
+" Моля, натиснете следната връзка, за да потвърдите заявката: %(reset_link)s "
+"Приятен ден. -- Съобщение, изпратено от %(site_title)s (%(site_url)s)"
+
+#, python-format
+msgid "Reset your password - %(site_title)s"
+msgstr "Нулиране на паролата - %(site_title)s"
+
+#, python-brace-format
+msgid "{num} Member"
+msgid_plural "{num} Members"
+msgstr[0] "{num} член"
+msgstr[1] "{num} членове"
+
+msgid "0 Members"
+msgstr "0 членове"
+
+msgid ""
+"<p>CKAN is the world’s leading open-source data portal platform.</p> <p>CKAN "
+"is a complete out-of-the-box software solution that makes data accessible and"
+" usable – by providing tools to streamline publishing, sharing, finding and "
+"using data (including storage of data and provision of robust data APIs). "
+"CKAN is aimed at data publishers (national and regional governments, "
+"companies and organizations) wanting to make their data open and "
+"available.</p> <p>CKAN is used by governments and user groups worldwide and "
+"powers a variety of official and community data portals including portals for"
+" local, national and international government, such as the UK’s <a "
+"href=\"https://data.gov.uk\">data.gov.uk</a> and the United States <a "
+"href=\"https://catalog.data.gov/\">catalog.data.gov</a>, the Brazilian <a "
+"href=\"https://dados.gov.br/\">dados.gov.br</a>, Dutch and Netherland "
+"government portals, as well as city and municipal sites in the US, UK, "
+"Argentina, Finland and elsewhere.</p> <p>CKAN: <a "
+"href=\"https://ckan.org/\">https://ckan.org/</a><br /> CKAN Showcases: <a "
+"href=\"https://ckan.org/showcase\">https://ckan.org/showcase</a><br /> "
+"Features overview: <a "
+"href=\"https://ckan.org/features/\">https://ckan.org/features/</a></p>"
+msgstr ""
+"<p>CKAN е водещата в света платформа с отворен код за портали за данни.</p> "
+"<p>CKAN е цялостно готово софтуерно решение, което прави данните достъпни и "
+"използваеми, като предоставя инструменти за улесняване на публикуването, "
+"споделянето, намирането и използването на данни (включително съхранение на "
+"данни и надеждни приложни програмни интерфейси за данни). CKAN е предназначен"
+" за публикуващи данни (национални и регионални правителства, компании и "
+"организации), които искат да направят данните си отворени и достъпни.</p> "
+"<p>CKAN се използва от правителства и потребителски групи по целия свят и "
+"стои зад различни официални и обществени портали за данни, включително "
+"портали на местни, национални и международни власти, като <a "
+"href=\"https://data.gov.uk\">data.gov.uk</a> във Великобритания и <a "
+"href=\"https://catalog.data.gov/\">catalog.data.gov</a> в САЩ, бразилския <a "
+"href=\"https://dados.gov.br/\">dados.gov.br</a>, правителствените портали на "
+"Нидерландия, както и градски и общински сайтове в САЩ, Великобритания, "
+"Аржентина, Финландия и другаде.</p> <p>CKAN: <a "
+"href=\"https://ckan.org/\">https://ckan.org/</a><br /> Примери за CKAN: <a "
+"href=\"https://ckan.org/showcase\">https://ckan.org/showcase</a><br /> "
+"Преглед на функциите: <a "
+"href=\"https://ckan.org/features/\">https://ckan.org/features/</a></p>"
+
+msgid "E.g. environment"
+msgstr "Напр. околна среда"
+
+msgid "Search data"
+msgstr "Търсене на данни"
+
+msgid "Search datasets"
+msgstr "Търсене на набори от данни"
+
+msgid "Popular tags"
+msgstr "Популярни етикети"
+
+msgid "Key"
+msgstr "Ключ"
+
+#, python-format
+msgid ""
+"You can use <a href=\"#markdown\" title=\"Markdown quick reference\" data-bs-"
+"toggle=\"popover\" data-bs-content=\"%(markdown_tooltip)s\" data-bs-"
+"html=\"true\">Markdown formatting</a> here"
+msgstr ""
+"Можете да използвате <a href=\"#markdown\" title=\"Кратка справка за "
+"Markdown\" data-bs-toggle=\"popover\" data-bs-"
+"content=\"%(markdown_tooltip)s\" data-bs-html=\"true\">форматиране с "
+"Markdown</a> тук"
+
+#, python-brace-format
+msgid "{count} member"
+msgid_plural "{count} members"
+msgstr[0] "{count} член"
+msgstr[1] "{count} членове"
+
+msgid "Email address"
+msgstr "Имейл адрес"
+
+#, python-brace-format
+msgid "Datasets in organization: {group}"
+msgstr "Набори от данни в организацията: {group}"
+
+msgid ""
+"Are you sure you want to delete this Organization? Note*: Deleting cannot be "
+"performed while public or private datasets belong to this organization."
+msgstr ""
+"Сигурни ли сте, че искате да изтриете тази организация? Забележка: "
+"изтриването не е възможно, докато към организацията принадлежат публични или "
+"частни набори от данни."
+
+msgid "Collaborators"
+msgstr "Сътрудници"
+
+msgid "New view"
+msgstr "Нов изглед"
+
+msgid "This resource has no views"
+msgstr "Този ресурс няма изгледи"
+
+msgid "All views"
+msgstr "Всички изгледи"
+
+msgid "View view"
+msgstr "Преглед на изгледа"
+
+msgid "View preview"
+msgstr "Предварителен преглед на изгледа"
+
+msgid "Edit Collaborator"
+msgstr "Редактиране на сътрудник"
+
+msgid "Add Collaborator"
+msgstr "Добавяне на сътрудник"
+
+msgid "Back to all collaborators"
+msgstr "Обратно към всички сътрудници"
+
+msgid "Are you sure you want to delete this collaborator?"
+msgstr "Сигурни ли сте, че искате да изтриете този сътрудник?"
+
+msgid "Update Collaborator"
+msgstr "Актуализиране на сътрудник"
+
+msgid "What are the available roles?"
+msgstr "Какви са наличните роли?"
+
+msgid ""
+"<p><strong>Admin:</strong> In addition to managing the dataset, admins can "
+"add and remove collaborators from a dataset.</p>"
+msgstr ""
+"<p><strong>Администратор:</strong> Освен да управляват набора от данни, "
+"администраторите могат да добавят и премахват сътрудници.</p>"
+
+msgid ""
+"<p><strong>Editor:</strong> Editors can edit the dataset and its resources, "
+"as well accessing the dataset if private.</p> <p><strong>Member:</strong> "
+"Members can access the dataset if private, but not edit it.</p>"
+msgstr ""
+"<p><strong>Редактор:</strong> Редакторите могат да редактират набора от данни"
+" и ресурсите му, както и да имат достъп до него, ако е частен.</p> "
+"<p><strong>Член:</strong> Членовете имат достъп до набора от данни, ако е "
+"частен, но не могат да го редактират.</p>"
+
+msgid "Add Collaborators"
+msgstr "Добавяне на сътрудници"
+
+#, python-brace-format
+msgid "{count} collaborator"
+msgid_plural "{count} collaborators"
+msgstr[0] "{count} сътрудник"
+msgstr[1] "{count} сътрудници"
+
+#, python-brace-format
+msgid "Are you sure you want to delete collaborator - {name}?"
+msgstr "Сигурни ли сте, че искате да изтриете сътрудника {name}?"
+
+msgid "Last Updated"
+msgstr "Последна актуализация"
+
+msgid "Before you can create a dataset you need to create an organization."
+msgstr "Преди да създадете набор от данни, трябва да създадете организация."
+
+msgid "Create a new organization"
+msgstr "Създаване на нова организация"
+
+msgid "There are no organizations to which you can assign this dataset."
+msgstr "Няма организации, към които можете да добавите този набор от данни."
+
+msgid "Ask a system administrator to create an organization before you can continue."
+msgstr "Помолете системен администратор да създаде организация, преди да продължите."
+
+msgid "Please select the license"
+msgstr "Моля, изберете лиценз"
+
+msgid "No Organization"
+msgstr "Без организация"
+
+msgid ""
+"The <i>data license</i> you select above only applies to the contents of any "
+"resource files that you add to this dataset. By submitting this form, you "
+"agree to release the <i>metadata</i> values that you enter into the form "
+"under the <a href=\"http://opendatacommons.org/licenses/odbl/1-0/\">Open "
+"Database License</a>."
+msgstr ""
+"<i>Лицензът за данните</i>, който изберете по-горе, се отнася само за "
+"съдържанието на файловете на ресурсите, които добавите към този набор от "
+"данни. С изпращането на този формуляр се съгласявате да публикувате "
+"<i>метаданните</i>, които въвеждате във формуляра, под <a "
+"href=\"http://opendatacommons.org/licenses/odbl/1-0/\">Open Database "
+"License</a>."
+
+msgid "This will be guessed automatically. Leave blank if you wish"
+msgstr "Ще бъде определено автоматично. Можете да го оставите празно"
+
+msgid "Data"
+msgstr "Данни"
+
+msgid "This dataset has no data"
+msgstr "Този набор от данни няма данни"
+
+msgid "eg. My View"
+msgstr "напр. Моят изглед"
+
+msgid "eg. Information about my view"
+msgstr "напр. Информация за моя изглед"
+
+msgid "Remove Filter"
+msgstr "Премахване на филтъра"
+
+msgid "What's a view?"
+msgstr "Какво е изглед?"
+
+msgid "A view is a representation of the data held against a resource"
+msgstr "Изгледът е представяне на данните на даден ресурс"
+
+msgid "There is no description for this dataset"
+msgstr "Няма описание за този набор от данни"
+
+msgid ""
+"<p id=\"search-error\"><strong>There was an error while searching.</strong> "
+"Please try again.</p>"
+msgstr ""
+"<p id=\"search-error\"><strong>Възникна грешка при търсенето.</strong> Моля, "
+"опитайте отново.</p>"
+
+#, python-brace-format
+msgid "Are you sure you want to delete user - {name}?"
+msgstr "Сигурни ли сте, че искате да изтриете потребителя {name}?"
+
+msgid "Reactivate User"
+msgstr "Повторно активиране на потребителя"
+
+msgid ""
+"This account is deactivated, if you want to reactivate it, please click on "
+"checkbox."
+msgstr ""
+"Този профил е деактивиран. Ако искате да го активирате отново, моля, "
+"отметнете полето."
+
+msgid "Sysadmin password"
+msgstr "Парола на системния администратор"
+
+msgid "Old Password"
+msgstr "Стара парола"
+
+msgid "Reactivate Profile"
+msgstr "Повторно активиране на профила"
+
+msgid "You can also change username. It can not be modified later."
+msgstr ""
+"Можете да промените и потребителското име. По-късно то не може да бъде "
+"променяно."
+
+msgid "User isn't a member of any groups."
+msgstr "Потребителят не е член на нито една група."
+
+msgid "User isn't a member of any organizations."
+msgstr "Потребителят не е член на нито една организация."
+
+msgid "Email or username"
+msgstr "Имейл или потребителско име"
+
+msgid ""
+"Enter your email address or username into the box and we will send you an "
+"email with a link to enter a new password."
+msgstr ""
+"Въведете имейл адреса или потребителското си име и ще Ви изпратим имейл с "
+"връзка за задаване на нова парола."
+
+msgid "Last Active"
+msgstr "Последна активност"
+
+msgid "Username or Email"
+msgstr "Потребителско име или имейл"
+
+# Left empty by CKAN's Bulgarian translation (ckan/views)
+
+msgid "Are you sure you want to purge datasets?"
+msgstr "Сигурни ли сте, че искате да изчистите наборите от данни окончателно?"
+
+msgid "Are you sure you want to purge organizations?"
+msgstr "Сигурни ли сте, че искате да изчистите организациите окончателно?"
+
+msgid "Are you sure you want to purge groups?"
+msgstr "Сигурни ли сте, че искате да изчистите групите окончателно?"
+
+#, python-brace-format
+msgid "{number} datasets have been purged"
+msgstr "Изчистени са {number} набора от данни"
+
+#, python-brace-format
+msgid "{number} organizations have been purged"
+msgstr "Изчистени са {number} организации"
+
+#, python-brace-format
+msgid "{number} groups have been purged"
+msgstr "Изчистени са {number} групи"
+
+msgid "There are no datasets to purge"
+msgstr "Няма набори от данни за изчистване"
+
+msgid "There are no organizations to purge"
+msgstr "Няма организации за изчистване"
+
+msgid "There are no groups to purge"
+msgstr "Няма групи за изчистване"
+
+#, python-brace-format
+msgid "Invalid search query: {error_message}"
+msgstr "Невалидна заявка за търсене: {error_message}"
+
+#, python-brace-format
+msgid "Parameter u\"{parameter_name}\" is not an integer"
+msgstr "Параметърът u\"{parameter_name}\" не е цяло число"
+
+msgid "Dataset not found or you have no permission to view it"
+msgstr "Наборът от данни не е намерен или нямате право да го видите"
+
+#, python-brace-format
+msgid "Viewing datasets of type \"{package_type}\" is not supported ({file_!r})."
+msgstr ""
+"Преглеждането на набори от данни от тип \"{package_type}\" не се поддържа "
+"({file_!r})."
+
+#, python-brace-format
+msgid "Unauthorized to read collaborators {}"
+msgstr "Нямате право да виждате сътрудниците {}"
+
+#, python-brace-format
+msgid "Unauthorized to delete collaborators {}"
+msgstr "Нямате право да изтривате сътрудници {}"
+
+msgid "User removed from collaborators"
+msgstr "Потребителят е премахнат от сътрудниците"
+
+#, python-brace-format
+msgid "Unauthorized to edit collaborators {}"
+msgstr "Нямате право да редактирате сътрудниците {}"
+
+#, python-format
+msgid "User %r not authorized to edit members of %s"
+msgstr "Потребителят %r няма право да редактира членовете на %s"
+
+#, python-brace-format
+msgid "Not authorized to access {group} members download"
+msgstr "Нямате право да изтегляте членовете на {group}"
+
+msgid "Members not found"
+msgstr "Членовете не са намерени"
+
+msgid "N/A"
+msgstr "Няма"
+
+msgid "members"
+msgstr "членове"
+
+msgid "Unauthorized to access"
+msgstr "Нямате права за достъп"
+
+#, python-brace-format
+msgid "{} not found"
+msgstr "{} не е намерен(а)"
+
+#, python-format
+msgid "%s has been deleted."
+msgstr "%s беше изтрит(а)."
+
+#, python-format
+msgid "Unauthorized to create group %s members"
+msgstr "Нямате право да създавате членове на групата %s"
+
+msgid "Resource view not found"
+msgstr "Изгледът на ресурса не е намерен"
+
+msgid "Not authorized to download resource"
+msgstr "Нямате право да изтеглите ресурса"
+
+msgid "Unauthorized to create a resource for this package"
+msgstr "Нямате право да създавате ресурс за този пакет"
+
+msgid "Bad resource view data"
+msgstr "Невалидни данни за изгледа на ресурса"
+
+msgid "Resource view not supplied"
+msgstr "Не е посочен изглед на ресурса"
+
+msgid "View Type Not found"
+msgstr "Типът изглед не е намерен"
+
+msgid "Unauthorized to view API tokens."
+msgstr "Нямате право да виждате API ключовете."
+
+msgid "Unauthorized to create API tokens."
+msgstr "Нямате право да създавате API ключове."
+
+#, python-brace-format
+msgid ""
+"API Token created: <code style=\"word-break:break-all;\">{token}</code> "
+"{copy}<br>Make sure to copy it now, you won't be able to see it again!"
+msgstr ""
+"Създаден е API ключ: <code style=\"word-break:break-all;\">{token}</code> "
+"{copy}<br>Копирайте го сега, по-късно няма да можете да го видите отново!"
+
+msgid "Unauthorized to revoke API tokens."
+msgstr "Нямате право да отменяте API ключове."
+
+msgid "Password entered was incorrect"
+msgstr "Въведената парола е грешна"
+
+msgid "Email is required"
+msgstr "Имейлът е задължителен"
+
+msgid "Error sending the email. Try again later or contact an administrator for help"
+msgstr ""
+"Грешка при изпращането на имейла. Опитайте отново по-късно или се свържете с "
+"администратор"
+
+msgid ""
+"A reset link has been emailed to you (unless the account specified does not "
+"exist)"
+msgstr ""
+"Изпратихме Ви имейл с връзка за нулиране на паролата (ако посоченият профил "
+"съществува)"
+
+msgid "Your password must be 8 characters or longer."
+msgstr "Паролата Ви трябва да е поне 8 знака."
+
+msgid "Not authorized to promote user to sysadmin"
+msgstr "Нямате право да давате права на системен администратор"
+
+#, python-brace-format
+msgid "Promoted {} to sysadmin"
+msgstr "{} получи права на системен администратор"
+
+#, python-brace-format
+msgid "Revoked sysadmin permission from {}"
+msgstr "Правата на системен администратор на {} са отнети"
+
+# Left empty by CKAN's Bulgarian translation (ckanext/datastore)
+
+msgid "Unsupported format"
+msgstr "Неподдържан формат"
+
+#, python-format
+msgid "Field %d"
+msgstr "Поле %d"
+
+msgid ""
+"Data Dictionary saved. Any type overrides will take effect when the resource "
+"is next uploaded to DataStore"
+msgstr ""
+"Речникът на данните е запазен. Промените в типовете ще влязат в сила при "
+"следващото зареждане на ресурса в DataStore"
+
+#, python-brace-format
+msgid "Resource/Alias \"{0}\" was not found."
+msgstr "Ресурсът/псевдонимът „{0}“ не е намерен."
+
+#, python-format
+msgid ""
+"Further information in the <a href=\"%(url)s\" target=\"_blank\">main CKAN "
+"Data API and DataStore documentation</a>.</p>"
+msgstr ""
+"Повече информация в <a href=\"%(url)s\" target=\"_blank\">основната "
+"документация на CKAN Data API и DataStore</a>.</p>"
+
+msgid "Code examples:"
+msgstr "Примерен код:"
+
+msgid "Get 5 results containing \"jones\" in any field:"
+msgstr "Получаване на 5 резултата, съдържащи \"jones\" в което и да е поле:"
+
+msgid ""
+"Get results with either \"watershed\" or \"survey\" as subject and \"active\""
+" as its stage:"
+msgstr ""
+"Получаване на резултати със \"watershed\" или \"survey\" като тема и "
+"\"active\" като етап:"
+
+msgid "SQL query example:"
+msgstr "Пример за SQL заявка:"
+
+msgid "Using the API with this Web Browser"
+msgstr "Използване на API с този уеб браузър"
+
+msgid "Some API endpoints may be accessed using a GET query string."
+msgstr ""
+"Някои крайни точки на API могат да бъдат достъпвани чрез GET заявка с "
+"параметри."
+
+#, python-format
+msgid "(using the <a href=\"%(url)s\">ckanapi</a> client library)"
+msgstr "(с клиентската библиотека <a href=\"%(url)s\">ckanapi</a>)"
+
+msgid "Primary key"
+msgstr "Първичен ключ"
+
+# Left empty by CKAN's Bulgarian translation (ckanext/resourceproxy)
+
+msgid "Invalid URL."
+msgstr "Невалиден URL адрес."
+
+# Left empty by CKAN's Bulgarian translation (ckanext/tabledesigner)
+
+msgid "Text"
+msgstr "Текст"
+
+# Left empty by CKAN's Bulgarian translation (ckanext/textview)
+
+msgid "An error occured during AJAX request. Could not load view."
+msgstr "Възникна грешка при AJAX заявката. Изгледът не може да бъде зареден."
+
+# Left empty by CKAN's Bulgarian translation (ckanext/webpageview)
+
+msgid "Website"
+msgstr "Уебсайт"
+
+msgid "Web Page url"
+msgstr "URL адрес на уеб страницата"
+
+msgid "eg. http://example.com  (if blank uses resource url)"
+msgstr "напр. http://example.com  (ако е празно, се използва URL адресът на ресурса)"
+
+# Left empty by CKAN's Bulgarian translation (ckanext-xloader/ckanext)
+
+msgid "Running"
+msgstr "Изпълнява се"
+
+msgid "Inactive"
+msgstr "Неактивно"
+
+msgid "Data awaiting load to DataStore"
+msgstr "Данните чакат зареждане в DataStore"
+
+msgid "Loading data into DataStore"
+msgstr "Данните се зареждат в DataStore"
+
+msgid "Failed to load data into DataStore"
+msgstr "Неуспешно зареждане на данните в DataStore"
+
+msgid "Data loaded into DataStore"
+msgstr "Данните са заредени в DataStore"
+
+msgid "Data available in DataStore"
+msgstr "Данните са налични в DataStore"
+
+msgid "Resource not active in DataStore"
+msgstr "Ресурсът не е активен в DataStore"
+
+msgid "DataStore status unknown"
+msgstr "Състоянието в DataStore е неизвестно"
+
+msgid "Last Updated Not Available"
+msgstr "Няма информация за последна актуализация"
+
+#, python-brace-format
+msgid "A row has more values than the {columns} column(s) in the header."
+msgstr "Ред има повече стойности от колоните в заглавния ред ({columns})."
+
+#, python-brace-format
+msgid "Row {row} has more values than the {columns} column(s) in the header."
+msgstr "Ред {row} има повече стойности от колоните в заглавния ред ({columns})."
+
+#, python-brace-format
+msgid ""
+"The extra value is: '{value}'. This usually means a value in the row contains"
+" a comma or double-quote that is not wrapped in double-quotes, splitting it "
+"into extra columns. If the file genuinely has an extra column, add it to the "
+"header row."
+msgstr ""
+"Допълнителната стойност е: „{value}“. Обикновено това означава, че стойност в"
+" реда съдържа запетая или кавичка, които не са оградени в двойни кавички, и "
+"тя се разделя на допълнителни колони. Ако файлът наистина има допълнителна "
+"колона, добавете я в заглавния ред."
+
+#, python-brace-format
+msgid ""
+"The file could not be read as a table. This usually means the file is not "
+"really in the format its name suggests (for example a CSV or an older .xls "
+"file renamed to .xlsx), or the file is empty or corrupted. Please open the "
+"file and save it again in the correct format (for example .xlsx or .csv), "
+"make sure the first row contains a header for every column, then upload it "
+"again. (Technical details: {details})"
+msgstr ""
+"Файлът не може да бъде прочетен като таблица. Обикновено това означава, че "
+"файлът всъщност не е във формата, който подсказва името му (например CSV или "
+"по-стар .xls файл, преименуван на .xlsx), или че е празен или повреден. Моля,"
+" отворете файла и го запазете отново в правилния формат (например .xlsx или "
+".csv), уверете се, че първият ред съдържа заглавие за всяка колона, и го "
+"качете отново. (Технически подробности: {details})"
+
+#, python-format
+msgid ""
+"Cannot upload resource %s to the DataStore because the resource did not pass "
+"validation yet."
+msgstr ""
+"Ресурсът %s не може да бъде качен в DataStore, защото все още не е преминал "
+"проверка."
+
+#, python-format
+msgid "DataStore and Data Dictionary deleted for resource %s"
+msgstr "DataStore и речникът на данните за ресурса %s са изтрити"
+
+msgid "Strip Extra Leading and Trailing White Space"
+msgstr "Премахване на интервалите в началото и края"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Не"
+
+msgid "Are you sure you want to delete the DataStore and Data Dictionary?"
+msgstr "Сигурни ли сте, че искате да изтриете DataStore и речника на данните?"
+
+msgid "Delete from DataStore"
+msgstr "Изтриване от DataStore"
+
+# Left empty by CKAN's Bulgarian translation (ckanext-geoview/ckanext)
+
+msgid "Map viewer"
+msgstr "Карта"
+
+#, python-format
+msgid "An error occurred: %(text)s %(error)s"
+msgstr "Възникна грешка: %(text)s %(error)s"
+
+msgid "This GeoJSON file is too big to be previewed. Please download it locally."
+msgstr "Този GeoJSON файл е твърде голям за предварителен преглед. Моля, изтеглете го."
+
+msgid "Map Type"
+msgstr "Тип на картата"
+
+msgid "Custom URL"
+msgstr "Потребителски URL адрес"
+
+msgid "Display Feature Info on Hover"
+msgstr "Показване на информация за обекта при посочване"
+
+msgid "Feature style descriptor"
+msgstr "Описание на стила на обектите"
